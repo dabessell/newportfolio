@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
   $(window).bind('scroll', function() {
    var navHeight = $( window ).height() - 39;
@@ -10,3 +9,6 @@ $(document).ready(function(){
 	 }
 });
 });
+
+
+
