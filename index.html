@@ -3,35 +3,9 @@
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="./scripts/main.js"></script>
-	<script>
-	$(document).ready(function(){
-  	// Add smooth scrolling to all links
-  	$("a").on('click', function(event) {
-
-    	// Make sure this.hash has a value before overriding default behavior
-    	if (this.hash !== "") {
-      	// Prevent default anchor click behavior
-      	event.preventDefault();
-
-      	// Store hash
-      	var hash = this.hash;
-
-      	// Using jQuery's animate() method to add smooth page scroll
-      	// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      	$('html, body').animate({
-        	scrollTop: $(hash).offset().top
-      	}, 800, function(){
-   
-        	// Add hash (#) to URL when done scrolling (default click behavior)
-        	window.location.hash = hash;
-      	});
-    	} // End if
-  	});
-	});
-	</script>
 	<link rel="stylesheet" type="text/css" href="./css/reset.css">
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
-	<title>David Bessell Web Design Portfolio</title>
+	<title> Home || David Bessell Web Design Portfolio</title>
 </head>
 <body>
 	<header>
@@ -45,27 +19,46 @@
 	</header>
 	<nav class="nav-container">
 		<div class="nav-bar" id="nav-bar">
-			<a href="./index.html">Home</a>
+			<a href="#aboutme">About Me</a>
 			<a href="./mywork.html">My Work</a>
-			<a href="./aboutme.html">About Me</a>
 			<a href="./contactme.html">Contact Me</a>
 			<a href="./blog.html">My Blog</a>
 		</div>
 		<div class="small-menu">
 			<img src="./images/menu.png" alt="Menu">
 			<div class="small-menu-content">
-				<a href="./index.html">Home</a>
+				<a href="#aboutme">About Me</a>
 				<a href="./mywork.html">My Work</a>
-				<a href="./aboutme.html">About Me</a>
 				<a href="./contactme.html">Contact Me</a>
 				<a href="./blog.html">My Blog</a>
 			</div>
 			<div class="small-menu-label"><span>Menu</span>
 		</div>
 	</nav>
-	<section class="main-container">
-		<div id="content" class="side-column"></div>
+	<section class="main-container" id="content">
+		<div class="side-column"></div>
 		<div class="middle-column">
+
+			<section id="aboutme" class="aboutme-container">
+				<div class="aboutme-img"><img src="./images/david.jpg" alt="David Bessell"></div>
+					<h1>David Bessell</h1>
+					<h4>noun  [dey-vid beh-sull]</h4>
+					<ol>
+						<li>Husband to a wonderful and beautiful wife.</li>
+						<li>Father to four amazing children.</li>
+						<li>Artist with a love for colored pencils and watercolors.</li>
+						<li>Long time technology enthusiast and Systems Engineer by trade.</li>
+						<li>Web Designer with an unending desire to learn more.</li>
+					</ol>
+					<p>While these are not the only things that define me, they are some of the most important things in my life. Welcome to my web design portfolio.  If my work intersts you, let me know how I can help you with your next project.<!--I love my family, and I love spending time with them. I also have a passion for Web Design and creating beautiful, interactive web sites.--></p><br />
+					<p>You can see some of my work below.</p>
+			</section>
+			<hr>
+			<section class="gallery">
+				
+			</section>
+			
+
 
 			
 
@@ -76,16 +69,7 @@
 
 	<footer class="footer-container">
 		<div class="footer">
-			<div class="site-map">
-				<ul>
-					<li><a href="./index.html">Home</a></li>
-					<li><a href="./mywork.html">My Work</a></li>
-					<li><a href="./aboutme.html">About Me</a></li>
-					<li><a href="./contactme.html">Contact Me</a></li>
-					<li><a href="./blog.html">My Blog</a></li>
-				</ul>
-			</div>
-			<div class="copy-info">&copy; David Bessell 2018</div>
+			<h4>&copy; David Bessell 2018</h4>
 		</div>
 	</footer>
 

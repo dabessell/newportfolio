@@ -1,5 +1,5 @@
 html {
-	height: 100%;
+	min-height: 100%;
 	width: 100%;
 	font-family: "Century Gothic";
 	font-size: 16px;
@@ -7,6 +7,15 @@ html {
 
 body {
 	min-height: 100%;
+}
+
+hr {
+	margin: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	width: 80%;
+	border-bottom: 5px solid #2b5797;
+	box-shadow: 2px 2px 5px black;
 }
 
 .header-container {
@@ -30,6 +39,7 @@ body {
 	border: 5px solid white;
 	padding: 25px;
 	margin-top: 50px;
+	box-shadow: 2px 2px 2px 2px #625750;
 }
 
 .header-container img {
@@ -37,16 +47,17 @@ body {
 }
 
 .header h1 {
-	font-size: 3.5rem;
+	font-size: 5rem;
 	font-weight: bold;
 }
 
 .header h3 {
-	font-size: 1.5rem;
+	font-size: 2rem;
 }
 
 .header h3, .header h1 {
 	color: white;
+	text-shadow: 2px 2px #625750;
 }
 
 scroll-container {
@@ -157,7 +168,7 @@ scroll-container {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
-	height: 780px;
+	height: 500px;
 }
 
 .side-column {
@@ -170,43 +181,79 @@ scroll-container {
 	width: 70%;
 }
 
+.aboutme-container {
+	width: 100%;
+}
+
+.aboutme-container h1{
+	font-size: 3rem;
+	font-weight: bold;
+	padding: 26px 0px 2px 0px;
+}
+
+.aboutme-container h4{
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: gray;
+	padding-bottom: 10px;
+}
+
+.aboutme-container ol {
+	list-style: inside;
+	list-style-type: decimal;
+}
+
+.aboutme-container li {
+ font-size: 1.5rem;
+ padding-bottom: 5px;
+}
+
+.aboutme-container p {
+	font-size: 1.5rem;
+	padding-left: 25px;
+	padding-top: 7px;
+}
+
+.aboutme-content {
+	padding: 25px 0px 0px 20px;
+}
+
+.aboutme-img {
+	padding-right: 20px;
+}
+
+.aboutme-img img {
+	float: left;
+	height: 300px;
+	width: 300px;
+	margin: 25px 15px 0px 25px;
+	border: 3px solid #2b5797;
+	border-radius: 15px;
+}
+
+
+
+
+
+
+
 .footer-container {
-	height: 200px;
+	height: 50px;
 	width: 100%;
 	background-color: #96897f;
 	border-top: 2px solid black;
 }
 
 .footer {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
 	width: 100%;
 	height: 100%;
 }
 
-.site-map {
-	height: 100%;
-	margin-top: 30px;
-}
-
-.site-map a {
-	color: white;
-	text-decoration: none;
-	font-size: 1.5rem;
-}
-
-.site-map ul {
-	padding: 15px 0px 0px 20px;
-}
-
-.site-map li {
-	padding-bottom: 5px;
-}
-
-.copy-info {
+.footer h4 {
+	float: right;
 	color: white;
 	font-size: 1.15rem;
-	margin-right: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
 }
+
